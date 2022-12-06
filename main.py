@@ -9,7 +9,7 @@ def main(filename, part2=True) -> int:
     
     for step, crumb in enumerate(trail):
         unique = True
-        for _ in range(len(crumbs)):
+        for _ in range(maxsize):
             if (inspect := drop()) in crumbs():
                 unique = False
             grab(inspect)
